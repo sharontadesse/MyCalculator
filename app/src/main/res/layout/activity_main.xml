@@ -118,9 +118,10 @@
         android:layout_height="wrap_content"
         android:text="+"
         android:textSize="30sp"
-        android:layout_below="@id/btn1"
-        android:layout_alignLeft="@id/btn1"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:layout_above="@+id/btn6"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView" />
     <Button
         android:id="@+id/btnMinus"
         android:onClick="onClick"
@@ -128,9 +129,10 @@
         android:layout_height="wrap_content"
         android:text="-"
         android:textSize="30sp"
-        android:layout_below="@id/btn2"
-        android:layout_alignLeft="@id/btn2"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:layout_alignTop="@+id/btn3"
+        android:layout_alignLeft="@+id/btnMul"
+        android:layout_alignStart="@+id/btnMul" />
     <Button
         android:id="@+id/btnDiv"
         android:onClick="onClick"
@@ -168,9 +170,10 @@
         android:layout_height="wrap_content"
         android:text="C"
         android:textSize="30sp"
-        android:layout_below="@id/btnDiv"
-        android:layout_alignLeft="@id/btnDiv"
-        android:padding="10dp"/>
+        android:padding="10dp"
+        android:layout_below="@+id/btn1"
+        android:layout_toLeftOf="@+id/btnDiv"
+        android:layout_toStartOf="@+id/btnDiv" />
 
     <ImageView
         android:layout_width="150dp"
@@ -180,6 +183,18 @@
         android:layout_alignParentRight="true"
         android:src="@drawable/dog"
         android:onClick="picture"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30sp"
+        android:id="@+id/btn0"
+        android:onClick="onClick"
+        android:layout_alignBottom="@+id/btnClean"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="10dp" />
 
 
 </RelativeLayout>
